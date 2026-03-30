@@ -3,6 +3,7 @@ import ContentsMenu from "@/components/contentsMenu";
 import Title from "@/components/title";
 import Support from "@/components/support";
 import LinkIcon from "@/components/linkicon";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -55,6 +56,7 @@ export default function Home() {
           />
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
