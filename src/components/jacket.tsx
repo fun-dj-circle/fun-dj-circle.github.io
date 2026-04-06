@@ -35,7 +35,7 @@ export default function Jacket() {
   }
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 md:gap-16 max-w-7xl mx-auto px-4 py-16">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-12 md:gap-24 max-w-6xl mx-auto px-4 py-16">
       {releases.map((release) => (
         <a
           key={release.date}
