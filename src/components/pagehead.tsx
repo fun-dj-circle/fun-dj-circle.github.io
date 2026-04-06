@@ -4,8 +4,8 @@ import { motion } from "motion/react";
 
 export default function PageHead() {
   return ( 
-  <div className="pt-32 px-4">
-        <div className="flex items-center justify-between max-w-6xl mx-auto ">
+  <div className="py-32 px-4">
+        <div className="flex items-center justify-between max-w-6xl mx-auto py-4 px-4">
           <motion.img
             src="/sqstripe.svg"
             alt="sqstripe"
