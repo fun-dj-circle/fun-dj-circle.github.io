@@ -36,7 +36,7 @@ export default function Home() {
             description="SoundCreateには多種多様な音楽性をもつ学生コンポーザーが集まり、ひとつのアルバム作品を作り上げています。また、すでに大学を卒業したOBメンバーや他大学からのインカレメンバーもサークル内で活躍しています。"
             layout="image-right"
             buttonLabel="Check Members"
-            buttonHref="/members"
+            buttonHref="/member"
           />
         </ScrollReveal>
         <ScrollReveal>
