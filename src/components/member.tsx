@@ -47,24 +47,24 @@ export default function Member({
 
       <div className="flex flex-col gap-2 px-8 md:px-0">
         <div>
-          <p className="text-lg text-gray-500 font-noto-sans-jp">{role}</p>
-          <h2 className="text-3xl text-black font-bold font-helvetica-lt-pro">
+          <p className="text-md md:text-lg text-gray-500 font-noto-sans-jp">{role}</p>
+          <h2 className="text-2xl md:text-3xl text-black font-bold font-helvetica-lt-pro">
             {name}
           </h2>
         </div>
 
         <div>
-          <p className="text-lg text-violet-600 font-bold font-helvetica-lt-pro">
+          <p className="text-md md:text-lg text-violet-600 font-bold font-helvetica-lt-pro">
             Comment
           </p>
-          <p className="text-lg text-black font-noto-sans-jp">{comment}</p>
+          <p className="text-md md:text-lg text-black font-noto-sans-jp">{comment}</p>
         </div>
 
         <div>
-          <p className="text-lg text-violet-600 font-bold font-helvetica-lt-pro">
+          <p className="text-md md:text-lg text-violet-600 font-bold font-helvetica-lt-pro">
             Favorite Genre
           </p>
-          <p className="text-lg text-black font-noto-sans-jp">{FavGenre}</p>
+          <p className="text-md md:text-lg text-black font-noto-sans-jp">{FavGenre}</p>
         </div>
       </div>
     </div>
