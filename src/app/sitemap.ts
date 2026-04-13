@@ -1,28 +1,27 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // 実際にはここでDBから記事一覧を取得したりします
-  // const posts = await getPosts() 
-  
-  const baseUrl = 'https://www.soundcreate.org' // 自分のドメイン
+  // Cloudflareで設定した「wwwあり」のドメインを指定してください
+  const baseUrl = 'https://www.soundcreate.org' 
 
   return [
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'yearly',
+      changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: `${baseUrl}/about`,
+      url: `${baseUrl}/member`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
-    // 動的なページ（ブログ記事など）を追加する場合
-    /* ...posts.map((post) => ({
-      url: `${baseUrl}/posts/${post.slug}`,
-      lastModified: post.updatedAt,
-    })), */
+    {
+      url: `${baseUrl}/release`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly', // 更新頻度が高いならweekly、低ければmonthlyでOK
+      priority: 0.8,
+    },
   ]
 }
