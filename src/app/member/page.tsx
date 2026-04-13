@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 import PageHead from "@/components/pagehead";
 import Member from "@/components/member";
 
@@ -7,8 +8,8 @@ export default function MemberPage() {
     <div className="min-h-screen bg-white"> 
      <Header />
      <PageHead 
-      RImageSrc="/sqstripe.svg"
-      LImageSrc="/sqstripe.svg"
+      RImageSrc="/Rnarrow.svg"
+      LImageSrc="/Lnarrow.svg"
       title="サークル所属メンバー"
       subtitle="Member"
      />
@@ -25,11 +26,12 @@ export default function MemberPage() {
         imageSrc="/onnenai.jpg"
         name="Onnenai"
         role="副代表 / トラックメーカー / エンジニア / B3"
-        comment="副代表です。&#10;Kawaii Future Bassから電子音楽にハマり、Futureなジャンルの音楽を中心に制作しています。合成音声も好きで初音ミクを中心に複数の音声ライブラリを揃えています。今年はたくさん使ってあげたいです。"
+        comment="副代表です。&#10;Kawaii Future Bassから電子音楽にハマり、Futureなジャンルの音楽を中心に制作しています。DJサークルでDJもしています。合成音声も好きで初音ミクを中心に複数の音声ライブラリを揃えています。今年はたくさん使ってあげたいです。"
         FavGenre="Kawaii Future Bass, Electro Pop, Vocaloid Electro, Botanicaなど"
         xUrl="https://twitter.com/onnenai_w57"
         soundcloudUrl="https://soundcloud.com/onnenaiw57"
       />
+      <Footer />
     </div>
   );
 }

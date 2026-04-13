@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Jacket from "@/components/jacket";
 import PageHead from "@/components/pagehead";
@@ -13,6 +14,7 @@ export default function Release() {
         subtitle="Release"
       />
       <Jacket />
+      <Footer />
     </div>
   );
 }
