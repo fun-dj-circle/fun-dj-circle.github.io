@@ -20,7 +20,7 @@ const notoSansJP = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: "SoundCreate",
-  description: "DTM Circle \"SoundCreate\" at Future University Hakodate",
+  description: 'DTM Circle "SoundCreate" at Future University Hakodate',
 };
 
 export default function RootLayout({

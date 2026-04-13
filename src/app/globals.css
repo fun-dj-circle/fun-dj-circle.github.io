@@ -12,6 +12,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-helvetica-lt-pro: "helvetica-lt-pro", sans-serif;
+  --font-noto-sans-jp: var(--font-noto-sans-jp);
 }
 
 @media (prefers-color-scheme: dark) {

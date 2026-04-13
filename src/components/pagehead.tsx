@@ -2,12 +2,19 @@
 
 import { motion } from "motion/react";
 
-export default function PageHead() {
+type pageHeadProps = {
+  RImageSrc: string;
+  LImageSrc: string;
+  title: string;
+  subtitle: string;
+};
+
+export default function PageHead({ RImageSrc, LImageSrc, title, subtitle }: pageHeadProps) {
   return ( 
   <div className="py-16 lg:py-32 px-4">
         <div className="flex items-center justify-between max-w-6xl mx-auto py-4 px-4">
           <motion.img
-            src="/sqstripe.svg"
+            src={RImageSrc}
             alt="sqstripe"
             className="h-[15px] w-[15px] sm:h-[20px] sm:w-[20px] lg:h-[25px] lg:w-[25px]"
             initial={{ opacity: 0 }}
@@ -26,10 +33,10 @@ export default function PageHead() {
               times: [0, 0.15, 0.3, 0.45, 0.6, 0.75, 0.9, 1],
             }}
             >
-              Release
+              {subtitle}
             </motion.p>
           <motion.img
-            src="/sqstripe.svg"
+            src={LImageSrc}
             alt="sqstripe"
             className="h-[15px] w-[15px] sm:h-[20px] sm:w-[20px] lg:h-[25px] lg:w-[25px]"
             initial={{ opacity: 0 }}
@@ -51,7 +58,7 @@ export default function PageHead() {
               ease: "easeOut",
             }}
           >
-            リリースしたアルバム
+            {title}
           </motion.h1>
         </div>
       </div>
