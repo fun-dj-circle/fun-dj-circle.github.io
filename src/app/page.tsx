@@ -13,7 +13,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        <div className="pt-4 pb-8 sm:pb-48">
+        <div className="pt-4 pb-8 md:pb-16 lg:pb-48">
           <Hero />
         </div>
         <ScrollReveal>

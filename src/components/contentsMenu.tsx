@@ -33,9 +33,9 @@ export default function ContentsMenu({
       }`}
     >
       <div className="w-full sm:flex-1 flex flex-col gap-2 px-4 sm:px-0">
-        <p className="text-[16px] font-bold font-helvetica-lt-pro text-violet-600">{title}</p>
-        <p className="text-[41px] text-black font-bold font-helvetica-lt-pro">{slogan}</p>
-        <p className="text-[16px] font-noto-sans-jp text-black leading-relaxed">{description}</p>
+        <p className="text-sm md:text-[16px] font-bold font-helvetica-lt-pro text-violet-600">{title}</p>
+        <p className="text-3xl md:text-[41px] text-black font-bold font-helvetica-lt-pro">{slogan}</p>
+        <p className="text-sm md:text-[16px] font-noto-sans-jp text-black leading-relaxed">{description}</p>
         {buttonHref && (
           <Link
             href={buttonHref}
