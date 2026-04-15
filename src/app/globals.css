@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/onf8vca.css");
+@import url("https://use.typekit.net/wfh2wrs.css");
 @import "tailwindcss";
 
 :root {
@@ -12,6 +13,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-helvetica-lt-pro: "helvetica-lt-pro", sans-serif;
+  --font-futura-pt: "futura-pt", sans-serif;
   --font-noto-sans-jp: var(--font-noto-sans-jp);
 }
 
