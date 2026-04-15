@@ -2,6 +2,8 @@ import { readdirSync } from "fs";
 import { join } from "path";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-static";
+
 interface Release {
   date: string;
   title: string;
