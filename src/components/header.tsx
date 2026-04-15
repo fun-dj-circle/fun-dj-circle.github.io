@@ -8,25 +8,25 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white px-4 sm:px-0">
+    <header className="sticky top-0 z-50 bg-gray-900 px-4 sm:px-0">
       <div className="flex items-center justify-between max-w-6xl mx-auto py-4 px-4">
         <Link
           href="/"
-          className="flex items-center gap-2 text-xl text-black font-helvetica-lt-pro font-bold"
+          className="flex items-center gap-2 text-xl text-white font-futura-pt font-bold"
         >
           <Image
-            src="/sclogo.svg"
-            alt="SoundCreate logo"
+            src="/dj_logo_wt.png"
+            alt="FUN DJ Circle logo"
             width={39}
             height={32}
           />
-          SoundCreate
+          FUN DJ Circle
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex gap-12 text-black font-helvetica-lt-pro font-bold">
+        <nav className="hidden md:flex gap-12 text-white font-futura-pt font-bold">
           <Link href="/member">Member</Link>
-          <Link href="/release">Release</Link>
+          <Link href="/event">Event</Link>
         </nav>
 
         {/* Hamburger button */}
@@ -54,8 +54,8 @@ export default function Header() {
           <Link href="/member" onClick={() => setIsOpen(false)}>
             Member
           </Link>
-          <Link href="/release" onClick={() => setIsOpen(false)}>
-            Release
+          <Link href="/event" onClick={() => setIsOpen(false)}>
+            Event
           </Link>
         </nav>
       )}

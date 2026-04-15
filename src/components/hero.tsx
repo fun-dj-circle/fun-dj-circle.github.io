@@ -22,7 +22,7 @@ export default function Hero() {
             />
             <div>
               <motion.p
-                className="text-[12px] sm:text-[16px] lg:text-[25px] text-violet-600 font-bold font-helvetica-lt-pro"
+                className="text-[12px] sm:text-[16px] lg:text-[25px] text-violet-600 font-bold font-futura-pt"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: [0, 1, 0, 1, 0, 1, 0, 1] }}
                 transition={{
@@ -33,7 +33,7 @@ export default function Hero() {
                 We are
               </motion.p>
               <motion.h1
-                className="text-[31px] sm:text-[41px] lg:text-[66px] text-black font-bold font-helvetica-lt-pro"
+                className="text-[31px] sm:text-[41px] lg:text-[66px] text-black font-bold font-futura-pt"
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{
@@ -42,7 +42,7 @@ export default function Hero() {
                   ease: "easeOut",
                 }}
               >
-                SoundCreate
+                FUN DJ&apos;s
               </motion.h1>
             </div>
             <motion.img
