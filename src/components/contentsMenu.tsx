@@ -33,22 +33,22 @@ export default function ContentsMenu({
       }`}
     >
       <div className="w-full sm:flex-1 flex flex-col gap-2 px-4 sm:px-0">
-        <p className="text-sm md:text-[16px] font-bold font-helvetica-lt-pro text-violet-600">{title}</p>
-        <p className="text-3xl md:text-[41px] text-black font-bold font-helvetica-lt-pro">{slogan}</p>
-        <p className="text-sm md:text-[16px] font-noto-sans-jp text-black leading-relaxed">{description}</p>
+        <p className="text-sm md:text-[16px] font-bold font-futura-pt text-lime-400">{title}</p>
+        <p className="text-3xl md:text-[41px] text-white font-bold font-futura-pt">{slogan}</p>
+        <p className="text-sm md:text-[16px] font-noto-sans-jp text-white leading-relaxed">{description}</p>
         {buttonHref && (
           <Link
             href={buttonHref}
-            className="inline-flex items-center self-start px-4 py-2 bg-violet-600 text-[16px] font-helvetica-lt-pro text-white font-bold"
+            className="inline-flex items-center self-start px-4 py-2 bg-lime-400 rounded-lg text-[16px] font-futura-pt text-gray-900 font-bold"
           >
             {buttonLabel}
-            <Image
+            {/* <Image
               src="/uparrow.svg"
               alt=""
               width={14}
               height={14}
               className="ml-2"
-            />
+            /> */}
           </Link>
         )}
       </div>

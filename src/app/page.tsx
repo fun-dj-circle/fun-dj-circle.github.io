@@ -10,11 +10,11 @@ import News from "@/components/news";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-900">
       <Header />
       <main>
         <div className="pt-4 pb-8 md:pb-16 lg:pb-48">
-          <Hero />
+          {/* <Hero /> */}
         </div>
         <ScrollReveal>
           <ContentsMenu
@@ -51,27 +51,21 @@ export default function Home() {
             buttonHref="/release"
           />
         </ScrollReveal>
-        <ScrollReveal>
-          <Title subtitle="News" title="最新情報" />
-        </ScrollReveal>
-        <ScrollReveal>
-          <News />
-        </ScrollReveal>
-        <ScrollReveal>
-          <Title subtitle="Support" title="参加申し込み・問い合わせ" />
+        {/* <ScrollReveal>
+          <Title subtitle="Join Us" title="サークルメンバー募集中" />
         </ScrollReveal>
         <ScrollReveal>
           <Support />
-        </ScrollReveal>
+        </ScrollReveal> */}
         <ScrollReveal>
           <Title subtitle="Partner" title="パートナーシップ" />
         </ScrollReveal>
         <ScrollReveal>
-          <div className="flex items-center gap-8 py-16 flex-row justify-center">
+          <div className="flex items-center gap-8 py-16 flex-row justify-center w-24 mx-auto">
             <LinkIcon
-              href="https://x.com/FUNDJCircle"
-              imgsrc="/djlogosmbk.png"
-              alt="FUNDJCircle"
+              href="https://soundcreate.org/"
+              imgsrc="/sclogo-white.svg"
+              alt="SoundCreate"
             />
           </div>
         </ScrollReveal>
